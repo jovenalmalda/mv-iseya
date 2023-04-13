@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+.red {
+    color: red;
+}
+
+@font-face {
+    font-family: 'RyoDispPlusN W50 Heavy';
+    src: url(../font/RyoDispPlusN-W50-Heavy.ttf);
+}
+
+@font-face {
+    font-family: 'A-OTF Gothic MB101 Pro B';
+    src: url(../font/A-OTF-Gothic-MB101-Pro-B.otf);
+}
+
+@font-face {
+    font-family: 'A-OTF Gothic MB101 Pro H';
+    src: url(../font/A-OTF-Gothic-MB101-Pro-H.otf);
+}
+
+header {
+    padding: 20px 0 0;
+}
+
+header .flex {
+    padding: 0 20px;
+}
+
+header .header__number a {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+header .header__number small {
+    font-size: 12px;
+}
+
+header .header__icon .green-btn {
+    display: flex;
+    background: url(../img/green-btn.png) no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    gap: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+header .nav__header {
+    background-color: #000;
+    height: 5vh;
+}
+/* header*/
+
+.mv {
+    background: url(../img/mv-top.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 87vh;
+    position: relative;
+}
+
+.mv .flex {
+    align-items: unset;
+    height: 87vh;
+}
+
+.mv::after {
+    content: "";
+    background: url(../img/1919-100-icon_1.png) no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 30vh;
+    position: absolute;
+    top: 75px;
+    left: 5%;
+}
+
+.mv .left {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px 10px 35px 50px;
+}
+
+.mv .left img{
+    width: 100%;
+}
+
+.mv .right {
+    width: 49%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mv .right img {
+    width: 75%;
+}
+
+.mv span {
+    font-size: 50px;
+}
+
+.mv .left .top-text {
+    position: relative;
+    z-index: 99;
+}
+
+.mv .left .top-text img{
+    width: 45%;
+}
+
+.mv .left .top-text .icon_100 {
+    text-align: end;
+}
+
+.top-text p {
+    font-size: 8vh;
+    font-family: 'A-OTF Gothic MB101 Pro H';
+    padding-left: 20%;
+}
+
+.bot-text {
+    text-align: start;
+    width: 90%;
+    margin: 0 0 0 auto;
+}
+
+.bot-text img {
+    padding-top: 30px;
+}
+
+.bot-text p {
+    font-size: 30px;
+    font-family: 'RyoDispPlusN W50 Heavy';
+}
+
+@media (max-width: 768px) {
+    header .header__number {
+        display: none;
+    }
+
+    header .header__icon {
+        display: none;
+    }
+
+    .mv .flex {
+        flex-direction: column;
+    }
+
+    .mv {
+        background: url(../img/top-sp.png), url(../img/ring-sp.png) no-repeat;
+        background-repeat: no-repeat;
+        background-position: top center, bottom;
+        background-size: 100%;
+        height: 65vh;
+    }
+
+    .mv .left {
+        width: 100%;
+        padding: 0;
+        gap: 40px;
+        position: relative;
+    }
+
+    .top-text p {
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    .bot-text {
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+    }
+
+    .mv .left::after {
+        content: "";
+        background: url(../img/img01.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 55%;
+        height: 37vh;
+        right: 0;
+        bottom: 0;
+    }
+
+    .bot-text p {
+        font-size: 25px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mv span {
+        font-size: 30px;
+    }
+
+    .mv .right {
+        display: none;
+    }
+
+    .mv .left img {
+        display: none;
+    }
+    
+}
