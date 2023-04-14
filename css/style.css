@@ -27,6 +27,19 @@ p {
     color: red;
 }
 
+h1 {
+    margin: 0;
+    font-family: 'A-OTF Gothic MB101 Pro H';
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font50 {
+    font-size: 50px;
+}
+
 @font-face {
     font-family: 'RyoDispPlusN W50 Heavy';
     src: url(../font/RyoDispPlusN-W50-Heavy.ttf);
@@ -79,7 +92,7 @@ header .nav__header {
 
 .mv {
     background: url(../img/mv-top.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     height: 87vh;
     position: relative;
@@ -88,17 +101,6 @@ header .nav__header {
 .mv .flex {
     align-items: unset;
     height: 87vh;
-}
-
-.mv::after {
-    content: "";
-    background: url(../img/1919-100-icon_1.png) no-repeat;
-    background-size: contain;
-    width: 35%;
-    height: 30vh;
-    position: absolute;
-    top: 75px;
-    left: 5%;
 }
 
 .mv .left {
@@ -124,17 +126,27 @@ header .nav__header {
     width: 75%;
 }
 
-.mv span {
-    font-size: 50px;
-}
-
 .mv .left .top-text {
-    position: relative;
-    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mv .left .top-text img{
-    width: 45%;
+.mv .left .top-text .icon-100{
+    position: relative;
+    padding-right: 225px;
+}
+
+.mv .left .top-text .icon-100::after{
+    content: "年以上!!";
+    position: absolute;
+    width: 50%;
+    font-size: 55px;
+    font-weight: 600;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    font-family: 'A-OTF Gothic MB101 Pro H';
 }
 
 .mv .left .top-text .icon_100 {
@@ -144,7 +156,10 @@ header .nav__header {
 .top-text p {
     font-size: 8vh;
     font-family: 'A-OTF Gothic MB101 Pro H';
-    padding-left: 20%;
+}
+
+.mv .left .top-text h1{
+    font-size: 55px;
 }
 
 .bot-text {
@@ -162,6 +177,82 @@ header .nav__header {
     font-family: 'RyoDispPlusN W50 Heavy';
 }
 
+@media (max-width: 1250px) {
+    .mv {
+        height: 75vh;
+        background-size: cover;
+    }
+
+    .mv .flex {
+        height: 75vh;
+    }
+
+    .mv .left .top-text .icon-100 {
+        padding-right: 140px;
+    }
+
+    .mv .left .top-text .icon-100::after {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header .header__icon {
+        display: none;
+    }
+
+    .mv {
+        background: url(../img/ring-sp.png), url(../img/top-sp.png) no-repeat;
+        background-repeat: no-repeat;
+        background-position: bottom, top center;
+        background-size: 100%;
+        height: 70vh;
+    }
+
+    .mv .flex {
+        height: 70vh;
+    }
+
+    .mv .left .top-text h1 {
+        font-size: 40px;
+    }
+
+    .mv .left .top-text .icon-100::after {
+        font-size: 35px;
+    }
+
+    .mv .left .top-text .icon-100 {
+        padding-right: 115px;
+    }
+
+    .mv .right img {
+        display: none;
+    }
+
+    .mv::after {
+        content: "";
+        background: url(../img/img01.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 50%;
+        height: 65vh;
+        right: 0;
+        bottom: 0;
+    }
+
+    .mv .left {
+        padding: 25px 10px 35px 10px;
+    }
+
+    .bot-text p {
+        font-size: 25px;
+    }
+
+    .font50 {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 768px) {
     header .header__number {
         display: none;
@@ -176,17 +267,16 @@ header .nav__header {
     }
 
     .mv {
-        background: url(../img/top-sp.png), url(../img/ring-sp.png) no-repeat;
+        background: url(../img/ring-sp.png), url(../img/top-sp.png) no-repeat;
         background-repeat: no-repeat;
-        background-position: top center, bottom;
+        background-position: bottom, top center;
         background-size: 100%;
-        height: 65vh;
+        height: 80vh;
     }
 
     .mv .left {
         width: 100%;
         padding: 0;
-        gap: 40px;
         position: relative;
     }
 
@@ -196,18 +286,18 @@ header .nav__header {
     }
 
     .bot-text {
-        margin: 0 auto;
+        margin: 0 0 0 auto;
         display: flex;
         position: relative;
     }
 
-    .mv .left::after {
+    .mv::after {
         content: "";
         background: url(../img/img01.png) no-repeat;
         background-size: cover;
         position: absolute;
-        width: 55%;
-        height: 37vh;
+        width: 50%;
+        height: 55vh;
         right: 0;
         bottom: 0;
     }
@@ -228,8 +318,57 @@ header .nav__header {
         display: none;
     }
 
-    .mv .left img {
+    .mv .left .top-text h1 {
+        font-size: 45px;
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    .mv .left .top-text .icon-100::after {
+        font-size: 45px;
+    }
+
+    .mv .left .top-text .icon-100 {
+        padding-right: 180px;
+    }
+
+    .mv .left .bot-text img {
         display: none;
     }
+
+    .mv .left .bot-text .text2-sp {
+        padding-top: 20px;
+    }
+
+    .mv .left .bot-text .text3-sp {
+        padding-top: 30px;
+    }
+
+    .mv .left .top-text {
+        padding: 10px;
+    }
     
+}
+
+@media (max-width: 568px) {
+    .mv {
+        height: 70vh;
+    }
+
+    .mv::after {
+        width: 55%;
+        height: 37vh;
+    }
+
+    .mv .left .top-text h1 {
+        font-size: 35px;
+    }
+
+    .mv .left .top-text .icon-100::after {
+        font-size: 25px;
+    }
+
+    .mv .left .top-text .icon-100 {
+        padding-right: 100px;
+    }
 }
