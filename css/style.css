@@ -158,8 +158,10 @@ header .nav__header {
     font-family: 'A-OTF Gothic MB101 Pro H';
 }
 
-.mv .left .top-text h1{
+.mv .left .top-text h1 {
     font-size: 55px;
+    text-align: start;
+    padding-left: 20px;
 }
 
 .bot-text {
