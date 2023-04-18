@@ -32,12 +32,20 @@ h1 {
     font-family: 'A-OTF Gothic MB101 Pro H';
 }
 
+h2 {
+    margin: 0;
+}
+
 .font30 {
     font-size: 30px;
 }
 
 .font50 {
     font-size: 50px;
+}
+
+.center {
+    text-align: center;
 }
 
 @font-face {
@@ -120,6 +128,7 @@ header .nav__header {
     width: 49%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .mv .right img {
@@ -170,13 +179,49 @@ header .nav__header {
     margin: 0 0 0 auto;
 }
 
-.bot-text img {
-    padding-top: 30px;
-}
-
 .bot-text p {
     font-size: 30px;
     font-family: 'RyoDispPlusN W50 Heavy';
+}
+
+.mv .bot-text img {
+    width: 165px;
+}
+
+.bot-text .store_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 20px;
+    background: url(../img/store_info_bg.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 90%;
+    height: 25vh;
+    padding: 0 20px;
+    margin-top: 25px;
+}
+
+.bot-text .right_icon img {
+    width: 100%;
+}
+
+.bot-text .store_text{
+    line-height: 70px;
+}
+
+.bot-text .store_text h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+.bot-text .store_text h1{
+    font-size: 49px;
+    color: #d2d7d7;
+}
+
+.bottom-mv-sp {
+    display: none;
 }
 
 @media (max-width: 1250px) {
@@ -348,6 +393,19 @@ header .nav__header {
 
     .mv .left .top-text {
         padding: 10px;
+    }
+
+    .bot-text-cp .store_info {
+        display: none;
+    }
+
+    .bottom-mv-sp {
+        display: block;
+        padding: 20px 5px;
+    }
+
+    .bottom-mv-sp img {
+        width: 100%;
     }
     
 }
