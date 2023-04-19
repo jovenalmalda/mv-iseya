@@ -224,6 +224,94 @@ header .nav__header {
     display: none;
 }
 
+@media (max-width: 1700px) {
+    .bot-text .store_text h2 {
+        font-size: 18px;
+    }
+
+    .bot-text .store_text h1 {
+        font-size: 35px;
+    }
+
+    .bot-text .store_text {
+        line-height: unset;
+    }
+
+    .mv .bot-text img {
+        width: 100px;
+    }
+
+    .bot-text .right_icon img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .bot-text .store_text h2 {
+        font-size: 18px;
+    }
+
+    .bot-text .store_text h1 {
+        font-size: 35px;
+    }
+
+    .bot-text .store_text {
+        line-height: unset;
+    }
+
+    .mv .bot-text img {
+        width: 100px;
+    }
+
+    .bot-text .right_icon img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bot-text .store_text h2 {
+        font-size: 16px;
+    }
+
+    .bot-text .store_text h1 {
+        font-size: 20px;
+    }
+
+    .bot-text .store_text {
+        line-height: unset;
+    }
+
+    .mv .bot-text img {
+        width: 100px;
+    }
+
+    .bot-text .right_icon img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bot-text .store_text h2 {
+        font-size: 16px;
+    }
+
+    .bot-text .store_text h1 {
+        font-size: 20px;
+    }
+
+    .bot-text .store_text {
+        line-height: unset;
+    }
+
+    .mv .bot-text img {
+        width: 100px;
+    }
+
+    .bot-text .right_icon img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1250px) {
     .mv {
         height: 75vh;
@@ -240,6 +328,36 @@ header .nav__header {
 
     .mv .left .top-text .icon-100::after {
         font-size: 45px;
+    }
+
+    .bot-text .store_text {
+        line-height: unset;
+    }
+
+    .bot-text .store_text h1 {
+        font-size: 20px;
+    }
+
+    .bot-text .store_text h2 {
+        font-size: 16px;
+    }
+
+    .bot-text .store_info {
+        background-size: cover;
+        width: 90%;
+        height: 15vh;
+    }
+
+    .mv .bot-text img {
+        width: 100px;
+    }
+
+    .bot-text .right_icon img {
+        width: 100%;
+    }
+
+    .bot-text {
+        width: 100%;
     }
 }
 
@@ -291,8 +409,17 @@ header .nav__header {
         padding: 25px 10px 35px 10px;
     }
 
-    .bot-text p {
-        font-size: 25px;
+    .bot-text .store_info {
+        display: none;
+    }
+
+    .bottom-mv-sp {
+        display: block;
+        padding: 20px 5px;
+    }
+
+    .bottom-mv-sp img{
+        width: 100%;
     }
 
     .font50 {
